@@ -1,0 +1,220 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #222;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Header styles */
+header, .navbar {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 60px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 56px;
+  margin-right: 12px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 0 6px;
+  transition: color 0.2s;
+}
+
+.nav-links a.active,
+.nav-links a:active {
+  color: #f60000;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #d40000;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.language-flag {
+  height: 20px;
+  margin-right: 7px;
+}
+
+.login-link {
+  color: #222;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 7px;
+  transition: color 0.2s;
+}
+
+.login-link:hover {
+  color: #f60000;
+}
+
+/* "New partner" button */
+.partner-btn {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 24px;
+  margin-left: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.partner-btn:hover {
+  background: #f60000;
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  width: 100vw;
+  min-height: 350px;
+  background: url('hero-image.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px; /* To offset fixed navbar */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.17);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 90px 20px 60px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.18;
+}
+
+.hero-content .cta-btn {
+  background: #f60000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 32px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.2s;
+}
+
+.hero-content .cta-btn:hover {
+  background: #d40000;
+}
+
+/* Section styles */
+section {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.section-description {
+  font-size: 1.13rem;
+  color: #222;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .navbar, header {
+    padding: 0 12px;
+    height: 55px;
+  }
+  .logo img {
+    height: 38px;
+  }
+  .nav-links {
+    gap: 10px;
+    margin-left: 10px;
+  }
+  .partner-btn {
+    padding: 7px 13px;
+    font-size: 15px;
+  }
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+  section {
+    padding: 36px 8px;
+  }
+}
+
+/* Utility */
+.bold {
+  font-weight: bold;
+}
