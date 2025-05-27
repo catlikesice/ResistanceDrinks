@@ -23,6 +23,14 @@ header, .navbar {
   z-index: 10;
 }
 
+/* Add this to your styles.css, or update the relevant section */
+
+.site-header {
+  margin-top: 90px; /* Add top margin to prevent overlap with navbar */
+  padding-top: 0;
+  text-align: left;
+}
+
 .navbar {
   position: fixed;
   top: 0;
