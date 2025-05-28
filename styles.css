@@ -48,11 +48,6 @@ header, .navbar {
   box-sizing: border-box;
 }
 
-/* Pushes down your content below the fixed navbar */
-.site-header {
-  margin-top: 70px; /* Should be >= .navbar height */
-}
-
 .logo {
   height: 60px;
   display: flex;
