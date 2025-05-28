@@ -48,9 +48,9 @@ header, .navbar {
   box-sizing: border-box;
 }
 
-/* Add this rule to push down your content so it's not hidden behind the navbar */
+/* Pushes down your content below the fixed navbar */
 .site-header {
-  margin-top: 70px; /* should be >= .navbar height */
+  margin-top: 70px; /* Should be >= .navbar height */
 }
 
 .logo {
